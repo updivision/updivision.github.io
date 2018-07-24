@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VueEasyPolls</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="./vue-easy-polls-plugin.js"></script>
+    <style>
+        body {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <poll-creator :demo="true"></poll-creator>
+        <hr>
+        <poll-view :demo="true"></poll-view>
+    </div>
+    <script>
+
+    Vue.use(VueEasyPolls);
+    
+    new Vue({
+        el: '#app',
+        data: function() {
+        },
+    })
+    </script>
+</body>
+</html>
